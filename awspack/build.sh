@@ -13,7 +13,7 @@ fi
 BASE_DIR=$(pwd)
 BUILD_DIR=${BASE_DIR}/build/
 
-rm -rf ${BUILD_DIR}/layer/R
+# rm -rf ${BUILD_DIR}/layer/R
 
 mkdir -p ${BUILD_DIR}/layer/
 docker run -it -v ${BUILD_DIR}/layer/:/var/awspack -v ${BASE_DIR}/entrypoint.sh:/entrypoint.sh \
